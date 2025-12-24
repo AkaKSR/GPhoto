@@ -1,5 +1,9 @@
 # GPhoto
 
+<p align="center">
+	<img src="ico/icon_128.png" alt="GPhoto icon" width="128" height="128" />
+</p>
+
 Copyright (c) 2025 AkaKSR
 
 ## Korean

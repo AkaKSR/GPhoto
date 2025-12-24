@@ -1,0 +1,57 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="photoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E67E22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="url(#photoGrad)" opacity="0.15"/>
+  
+  <!-- Photo/Image frame -->
+  <rect x="40" y="60" width="176" height="130" rx="8" ry="8" 
+        fill="url(#photoGrad)" stroke="#2C5F8D" stroke-width="4"/>
+  
+  <!-- Mountain scenery inside photo -->
+  <path d="M 50 160 L 90 120 L 120 145 L 150 110 L 200 155 L 200 180 L 50 180 Z" 
+        fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Sun/circle in photo -->
+  <circle cx="180" cy="90" r="15" fill="#ffffff" opacity="0.4"/>
+  
+  <!-- Binary code pattern (representing hidden data) -->
+  <g opacity="0.2">
+    <text x="60" y="85" font-family="monospace" font-size="12" fill="#ffffff">1010</text>
+    <text x="100" y="100" font-family="monospace" font-size="12" fill="#ffffff">0110</text>
+    <text x="140" y="85" font-family="monospace" font-size="12" fill="#ffffff">1101</text>
+    <text x="60" y="140" font-family="monospace" font-size="12" fill="#ffffff">0011</text>
+    <text x="160" y="145" font-family="monospace" font-size="12" fill="#ffffff">1001</text>
+  </g>
+  
+  <!-- Lock/security symbol -->
+  <g transform="translate(160, 160)">
+    <!-- Lock body -->
+    <rect x="0" y="15" width="50" height="45" rx="5" ry="5" 
+          fill="url(#lockGrad)" stroke="#C87D0E" stroke-width="3"/>
+    <!-- Lock shackle -->
+    <path d="M 10 15 L 10 5 C 10 -5, 40 -5, 40 5 L 40 15" 
+          fill="none" stroke="#C87D0E" stroke-width="5" stroke-linecap="round"/>
+    <!-- Keyhole -->
+    <circle cx="25" cy="33" r="6" fill="#ffffff" opacity="0.8"/>
+    <rect x="22" y="35" width="6" height="12" rx="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- Subtle grid pattern overlay -->
+  <g opacity="0.08">
+    <line x1="40" y1="95" x2="216" y2="95" stroke="#000000" stroke-width="1"/>
+    <line x1="40" y1="125" x2="216" y2="125" stroke="#000000" stroke-width="1"/>
+    <line x1="40" y1="155" x2="216" y2="155" stroke="#000000" stroke-width="1"/>
+    <line x1="90" y1="60" x2="90" y2="190" stroke="#000000" stroke-width="1"/>
+    <line x1="140" y1="60" x2="140" y2="190" stroke="#000000" stroke-width="1"/>
+  </g>
+</svg>

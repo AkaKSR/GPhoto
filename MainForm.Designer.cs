@@ -54,6 +54,16 @@ namespace GPhoto
             this.ClientSize = new Size(1800, 800);
             // Start the form centered on the user's screen
             this.StartPosition = FormStartPosition.CenterScreen;
+            // Set the form icon from embedded resources
+            try
+            {
+                var icon = Properties.Resources.AppIcon;
+                if (icon != null)
+                {
+                    this.Icon = icon;
+                }
+            }
+            catch { }
 
             // tableLayoutPanelMain
             this.tableLayoutPanelMain.ColumnCount = 2;

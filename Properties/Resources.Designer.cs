@@ -45,5 +45,26 @@ namespace GPhoto.Properties
                 }
             }
         }
+
+        /// <summary>
+        /// Returns the application icon from embedded resources.
+        /// </summary>
+        internal static Icon? AppIcon
+        {
+            get
+            {
+                try
+                {
+                    var assembly = typeof(Resources).Assembly;
+                    using var stream = assembly.GetManifestResourceStream("GPhoto.ico.icon.ico");
+                    if (stream == null) return null;
+                    return new Icon(stream);
+                }
+                catch
+                {
+                    return null;
+                }
+            }
+        }
     }
 }

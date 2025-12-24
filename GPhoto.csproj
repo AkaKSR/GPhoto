@@ -6,8 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>ico/icon.ico</ApplicationIcon>
   </PropertyGroup>
 
-  <!-- default.png is now embedded into Resources.resx; external file entry removed -->
+  <ItemGroup>
+    <!-- Embed the application icon into the assembly as an embedded resource -->
+    <EmbeddedResource Include="ico/icon.ico" LogicalName="GPhoto.ico.icon.ico" />
+  </ItemGroup>
 
 </Project>
